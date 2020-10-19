@@ -114,7 +114,7 @@ build-linux:
 	  -e GOPATH=/go                                                                    \
 	  -e SHELLOPTS=$(SHELLOPTS)                                                        \
 	  -e CGO_ENABLED="0"                                                               \
-	  $(BASE_REGISTRY)/golang:1.12.12-stretch                                          \
+	  $(BASE_REGISTRY)/golang:1.12-security                                            \
 	    /bin/bash -c 'for target in $(TARGETS); do                                     \
 	      go build -i -v -o $(OUTPUT_DIR)/$${target} -p $(CPUS)                        \
 	        -ldflags "-s -w -X $(ROOT)/pkg/version.VERSION=$(VERSION)                  \
