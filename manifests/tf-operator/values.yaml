@@ -1,0 +1,17 @@
+deployments:
+  tf-operator:
+    replicas: 1
+    containers:
+      tf-operator-container:
+        image:
+          registry: cargo.caicloud.xyz/release
+          name: tf-operator
+          tag: v1.0.2
+          pullPolicy: IfNotPresent
+        resources:
+          limits:
+            cpu: 100m
+            memory: 200Mi
+          requests:
+            cpu: 50m
+            memory: 100Mi
