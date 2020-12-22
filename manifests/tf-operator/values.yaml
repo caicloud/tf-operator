@@ -1,0 +1,21 @@
+platformConfig:
+  imageRegistry: xxx.cargo.io
+  imageRepositoryRelease: release
+  imagePullPolicy: Always
+  userCluster: false
+
+deployments:
+  tf-operator:
+    replicas: 1
+    containers:
+      tf-operator-container:
+        image:
+          name: tf-operator
+        resources:
+          useDefault: false
+          limits:
+            cpu: 100m
+            memory: 200Mi
+          requests:
+            cpu: 50m
+            memory: 100Mi
