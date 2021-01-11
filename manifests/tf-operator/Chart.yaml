@@ -7,6 +7,6 @@ description: A helm chart for tf-operator addon
 # 固定值
 type: application
 # 组件版本号
-appVersion: v2.0.0-alpha.2
+appVersion: v2.0.0-alpha.3
 # chart 版本号，与组件版本号 appVersion 字段保持一致
-version: v2.0.0-alpha.2
+version: v2.0.0-alpha.3
