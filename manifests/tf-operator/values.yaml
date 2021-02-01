@@ -3,6 +3,8 @@ platformConfig:
   imageRepositoryRelease: release
   imagePullPolicy: Always
   userCluster: false
+image:
+  name: tf-operator
 
 deployments:
   tf-operator:
